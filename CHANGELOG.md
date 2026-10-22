@@ -4,6 +4,12 @@
 
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [2.8.2] - 2026-10-22
+
+### 修复
+
+- **简→繁时「吃」被转为「喫」**（[#1](https://github.com/weiningwei/zh-t2s/issues/1)）：简→繁 converter 原用 `{ from: 'cn', to: 't' }`（OpenCC s2t），`t` 是 OpenCC 自订的传统字形标准，`STCharacters` 将「吃」映射为「喫」，且之后没有地区字形校正，导致 吃饭→喫飯、好吃→好喫。改为 `{ from: 'cn', to: 'tw' }`（s2tw），在 s2t 之后多经 `TWVariants`（含 `喫 吃`）校正为现行台湾字形。同一校正还修正了 `裏→裡`、`着→著`、`爲→為`、`峯→峰`、`牀→床`、`羣衆→群眾` 等旧字形。仍只做字形转换，不改地区用词（「軟件」不会变成「軟體」）。opencc-js 1.3.2 至 1.5.0-beta.0 的 `to: 't'` 行为一致，升级依赖无法解决。繁→简方向不受影响。
+
 ## [2.8.1] - 2026-10-03
 
 ### 修复
