@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         繁简转换 (zh-t2s)
-// @name:zh-CN   繁简转换 (zh-t2s)
-// @name:zh-TW   繁簡轉換 (zh-t2s)
-// @name:en      Traditional-Simplified Chinese Converter (zh-t2s)
-// @namespace    https://github.com/weiningwei/zh-t2s
+// @name         繁简转换 (zh-t2s · KaguyaScarlet)
+// @name:zh-CN   繁简转换 (zh-t2s · KaguyaScarlet)
+// @name:zh-TW   繁簡轉換 (zh-t2s · KaguyaScarlet)
+// @name:en      Traditional-Simplified Chinese Converter (zh-t2s · KaguyaScarlet)
+// @namespace    https://github.com/KaguyaScarlet/zh-t2s
 // @version      2.9.0
 // @description       基于 OpenCC 在网页繁简中文之间双向转换，覆盖正文/标题/表单等可见文本，支持动态内容与分批处理；默认繁→简，可通过菜单切换为简→繁；繁体可选台湾或香港字形。
 // @description:zh-CN 基于 OpenCC 在网页繁简中文之间双向转换，覆盖正文/标题/表单等可见文本，支持动态内容与分批处理；默认繁→简，可通过菜单切换为简→繁；繁体可选台湾或香港字形。
@@ -19,8 +19,10 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @license      MIT
-// @homepageURL  https://github.com/weiningwei/zh-t2s
-// @supportURL   https://github.com/weiningwei/zh-t2s/issues
+// @homepageURL  https://github.com/KaguyaScarlet/zh-t2s/tree/kaguya
+// @supportURL   https://github.com/KaguyaScarlet/zh-t2s/issues
+// @updateURL    https://raw.githubusercontent.com/KaguyaScarlet/zh-t2s/kaguya/zh-t2s.user.js
+// @downloadURL  https://raw.githubusercontent.com/KaguyaScarlet/zh-t2s/kaguya/zh-t2s.user.js
 // ==/UserScript==
 
 (function () {
